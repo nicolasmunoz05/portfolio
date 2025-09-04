@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "26/03/2025 - 14/08/2025",
+    title: "TÉSIS: GENERACIÓN DE ROSTROS HUMANOS PERSONALIZADOS CON STABLEDIFFUSION + LORA",
+    company: "Universidad Católica del Maule",
+    description:
+      "Junto con docentes y el apoyo de laboratorios y servidores de la UCM, desarrollamos y evaluamos la efectividad de implementar la técnica de finetuning “LoRA” para producir modelos generativos de rostros humanos, usando modelos de difusión pre-entrenados como base.",
+  },
+  {
+    date: "02/01/2025 - 28/02/2025",
+    title: "PRACTICANTE INFORMÁTICO",
+    company: "Tutelkan LTDA",
+    description:
+      "Soporte y Mantención de Software, Desarrollos menores, Investigación de tecnologías, Testing y Documentación. Estas fueron cumplidas en distintos proyectos de la empresa como Kozecha, KPI Icescrum, Web Tutelkan, y Migración del sistema de tickets.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
